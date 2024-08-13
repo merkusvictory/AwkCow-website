@@ -1,0 +1,394 @@
+*
+{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+  /* border: 1px solid black; */
+ font-family: Courier;
+}
+
+
+html {
+  font-size: 16;
+}
+
+/* NAVBAR */
+header, ul {
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 70px;
+  align-items: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+#header-div{
+  width: 100%;
+  min-width: 300px;
+  display: flex;
+}
+
+#header-img{
+  width: 300px;
+  object-fit: cover;
+  height: 70px;
+}
+
+ul {
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20;
+  height: 50px;
+  display: flex;
+}
+
+.nav-link {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  color: black;
+  text-decoration: none;
+}
+
+/* EMAIL */
+#newsletter {
+  height: 23vw;
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#form {
+  width: 50%;
+  text-align: center;
+}
+
+.form-title {
+  font-size: 4vw;
+}
+
+.form-subtitle {
+  font-size: 1.8vw;
+}
+
+#email {
+  margin-top: 1.5vw;
+  height: 2.5vw;
+  width: 30vw;
+  margin-bottom: 1.5vw;
+  font-size: 1.8vw;
+}
+
+#submit {
+  width: 15vw;
+  height: 3vw;
+  font-size: 1.5vw;
+}
+
+#submit:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  #newsletter {
+    height: 180px;
+  }
+  .form-title {
+    font-size: 31px;
+  }
+  .form-subtitle {
+    font-size: 14px;
+  }
+  #email {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    height: 20px;
+    width: 230px;
+    font-size: 15px;
+  }
+  #submit {
+    height: 23px;
+    width: 115px;
+    font-size: 11.5px;
+  }
+}
+
+/* CHARACTERS OUTER */
+#characters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 150vw;
+  padding: 4vw 0;
+}
+
+#characters > h1 {
+  color: white;
+}
+
+.section-title {
+    margin: 0 6vw;
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    width: 87.5vw;
+    text-align: center;
+}
+
+.char {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 87.5vw;
+  height: 38vw;
+  margin: 0 6vw;
+}
+
+.char-logo {
+  display: flex;
+}
+
+.char-content {
+    width: 51vw;
+}
+
+
+.char-title {
+    margin-bottom: 1.3vw;
+}
+
+@media only screen and (max-width: 800px) {
+    #characters {
+        height: 1100px;
+        padding: 30px 0;
+    }
+    .section-title {
+        margin: 0 50px;
+        font-size: 39px;
+        margin-bottom: 16px;
+        width: 700px;
+    }
+    .char {
+        width: 700px;
+        height: 300px;
+        margin: 0 50px;
+    }
+    .char-content {
+        width: 400px;
+    }
+    .char-title {
+        margin-bottom: 10px;
+    }
+}
+
+/* CHARACTERS INNER */
+.AwkCow-sprite, .Bluba-sprite, .Amogus-sprite {
+    height: 20vw;
+    object-fit: cover;
+}
+
+.char-title {
+    font-weight: bold;
+    font-size: 3.2vw;
+}
+
+.char-title-descrip {
+  font-weight: unset;
+  font-size: 2.5vw;
+}
+
+.char-description {
+    font-size: 1.8vw;
+}
+
+.AwkCow {
+    background-color: rgb(255, 203, 212);
+}
+
+.Bluba {
+    background-color: rgb(208, 250, 156)
+}
+
+.Amogus {
+    background-color: rgb(189, 189, 255);
+}
+
+@media only screen and (max-width: 800px) {
+    .AwkCow-sprite, .Bluba-sprite, .Amogus-sprite {
+        height: 150px;
+    }
+    .char-title {
+        font-size: 25px;
+    }
+    .char-description {
+        font-size: 16px;
+    }
+}
+
+/* GAMEPLAY */
+#gameplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 60vw;
+    padding: 5vw 0;
+}
+
+#video {
+  height: 41vw;
+  width: 73vw;
+  align-self: center;
+}
+
+@media only screen and (max-width: 800px) {
+    #gameplay {
+        height: 469px;
+        padding: 39px 0;
+    }
+    #video {
+      height: 320px;
+      width: 569px;
+      margin: 0 120px;
+      align-self: unset;
+    }
+}
+
+/* PLAY */
+#play {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60vw;
+  padding: 5vw 0;
+}
+
+#play > h1 {
+  color: white;
+}
+
+.versions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 87.5vw;
+  height: 30vw;
+  align-self: center;
+}
+
+.demo {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.demo-header {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+
+.demo-header-text {
+  width: 100%;
+  font-size: 2.5vw;
+}
+
+.demo-descrip {
+  width: 100%;
+  height: 60%;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.demo-button {
+  margin: auto;
+  height: 15%;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 2vw;
+  text-align: center;
+  line-height: 4vw;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+}
+
+.demo-button:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+
+@media only screen and (max-width: 800px) {
+  #play {
+      height: 469px;
+      padding: 39px 0;
+  }
+  .versions {
+    margin: 0 50px;
+    align-self: unset;
+    width: 684px;
+    height: 234px;
+  }
+  .demo {
+    width: 195px;
+  }
+  .demo-header-text {
+    font-size: 16px;
+  }
+  .demo-button {
+    font-size: 20px;
+    line-height: 31px;
+  }
+}
+
+/* SECTION COLORS */
+#newsletter {
+  background-image: url(https://scontent.fmnl8-2.fna.fbcdn.net/v/t1.15752-9/454528576_379089191634101_9061157081078773908_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFp5q_k3kZunFl5E1862LnYymLTkTOPG87KYtORM48bzsdeHfCW_y0Js8Utoe-QMqYmrvXyM1YuyPfqu8NQXWIf&_nc_ohc=G3jn6XiRxDcQ7kNvgGhf-9V&_nc_ht=scontent.fmnl8-2.fna&oh=03_Q7cD1QEd8h0v4lKFQMAYcrlu-2q_uhtDKiUbU8FRh2DkD10Ptw&oe=66E248ED);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#characters {
+  background-color: rgb(117, 117, 117);
+}
+
+#gameplay {
+  background-color: rgb(196, 145, 153);
+}
+
+#play {
+  background-color: rgb(90, 81, 60);
+}
+
+.demo {
+  background-color: rgb(208, 208, 208);
+}
+
+.demo-descrip {
+  background-color: white;
+}
+
+.demo-button {
+  background-color: rgb(252, 248, 29);
+}
